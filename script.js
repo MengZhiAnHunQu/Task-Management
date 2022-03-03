@@ -18,7 +18,7 @@ const handleOnSubmit = (e) => {
   const ttlHr = taskTotalHrs();
 
   if (ttlHr + Hours > weekHrs) {
-    return alert("too much hours!");
+    return alert("You only have 168 hours per week😜");
   }
   const obj = {
     task: Tasks,
@@ -40,10 +40,10 @@ const display = () => {
         <td>
         <input type="checkbox" />
         </td>
-        <td>${item.task}</td>
-        <td>${item.hr}</td>
+        <td class="fs-4">${item.task}</td>
+        <td class="fs-4">${item.hr} hr</td>
         <td>
-        <button class="btn btn-danger" onClick ="deleteTaskList(${i})">
+        <button class="btn btn-warning" onClick ="deleteTaskList(${i})">
         <i class="fa-solid fa-trash-can"></i>
         </button>
         <button class="btn btn-primary" onClick="MarkAsNotToDo(${i})" >
@@ -66,8 +66,8 @@ const displayBadList = () => {
         <td>
         <input type="checkbox" />
         </td>
-        <td>${item.task}</td>
-        <td>${item.hr}</td>
+        <td class="fs-4">${item.task}</td>
+        <td class="fs-4">${item.hr}</td>
         <td>
         <button class="btn btn-warning" onclick="MarkAsToDo(${i})">
         <i class="fa-solid fa-arrow-left"></i>

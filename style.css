@@ -1,6 +1,9 @@
 .wrapper {
   min-height: 100vh;
-  background: url("bg.jpg") center center;
+  background: url("bg.jpg");
+
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  font-family: "Changa One", cursive;
 }

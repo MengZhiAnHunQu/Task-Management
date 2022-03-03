@@ -1,7 +1,6 @@
-/* * {
-    color: white;
-} */
 .wrapper {
   min-height: 100vh;
-  background: rgb(252, 150, 112);
+  background: url("bg.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
